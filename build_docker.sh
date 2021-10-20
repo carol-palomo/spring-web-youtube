@@ -2,7 +2,7 @@
 echo "Digite a tag que deseja para deploy"
 read tag
 git checkout tag
-docker build -t "didox/crud-java-login:$tag" -f Dockerfile .
+docker build -t "carol-palomo/spring-web-youtube$tag" -f Dockerfile .
 
 #### Pegando ultima tag do git #####
 #tag=$(git describe --tags $(git rev-list --tags --max-count=1))
